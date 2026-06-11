@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Евгений Дерябин — Film Editor</title>
+  <meta name="description" content="Режиссёр монтажа. Реклама, документалистика, игровое кино, музыкальные клипы."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== ШАПКА ===== -->
+  <header>
+    <a href="#" class="logo" id="home-link">
+      Евгений Дерябин<small>Film Editor</small>
+    </a>
+    <nav class="tabs">
+      <button class="tab" id="works-tab">WORKS</button>
+    </nav>
+    <a href="#contact" class="contact-link" id="contact-link">Contact</a>
+  </header>
+
+  <main>
+
+    <!-- ===== ГЛАВНАЯ (HERO) ===== -->
+    <section class="view view-hero active" id="view-hero">
+      <button class="hero-stage" id="hero-stage" aria-label="Открыть проект">
+        <img id="hero-img"        class="hero-img-desktop" src="" alt=""/>
+        <img id="hero-img-mobile" class="hero-img-mobile"  src="" alt=""/>
+        <div class="hero-caption">
+          <h1 id="hero-title"></h1>
+          <p id="hero-meta"></p>
+        </div>
+      </button>
+    </section>
+
+    <!-- ===== СТРАНИЦА WORKS ===== -->
+    <section class="view view-works" id="view-works">
+
+      <!-- ====== РЯД: COMMERCIALS ====== -->
+      <div class="reel" id="reel-commercial">
+        <h2 class="reel-title">Commercials</h2>
+
+        <div class="strip">
+
+          <button class="thumb"
+                  data-genre="commercial"
+                  data-kid="nqwdRyvhLDgWe8nSFdbTAa"
+                  data-title="AMAZING RED x BetBoom Team"
+                  data-meta="Commercial · 2026"
+                  data-img-mobile="assets/posters-mobile/ARxOZIO - BetBOOM_V_1.webp">
+            <img src="assets/posters/ARxOZIO_BetBOOM.webp" alt="Work 1" class="desktop-image">
+            <span class="thumb-label">
+              <strong>AMAZING RED x BetBoom Team</strong><br/>
+              <em>Commercial · 2026</em>
+            </span>
+          </button>
+
+          <button class="thumb"
+                  data-genre="commercial"
+                  data-kid="k2VrGaJmFybCcjXkRYa8UV"
+                  data-title="AMAZING RED — PUMA FADE NITRO"
+                  data-meta="Commercial · 2026"
+                  data-img-mobile="assets/posters-mobile/FADE_NITRO_V_1.webp">
+            <img src="assets/posters/ARxOZIOxFADE_NITRO_1.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>AMAZING RED — PUMA FADE NITRO</strong><br/>
+              <em>Commercial · 2026</em>
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ====== РЯД: DOCUMENTARY ====== -->
+      <div class="reel" id="reel-doc">
+        <h2 class="reel-title">Documentary</h2>
+
+        <div class="strip">
+
+          <button class="thumb"
+                  data-genre="doc"
+                  data-kid="oVFPMuGCPP9yjT3HmVxnFJ"
+                  data-title="Последний сезон"
+                  data-meta="Documentary · 2025"
+                  data-img-mobile="assets/posters-mobile/LS_V_1.webp">
+            <img src="assets/posters/LSH.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>Последний сезон</strong><br/>
+              <em>Documentary · 2025</em>
+            </span>
+          </button>
+
+          <button class="thumb"
+                  data-genre="doc"
+                  data-kid="eyZea8Cji9j75VaCVnuBPb"
+                  data-title="Гонимые ветром. Северные курилы"
+                  data-meta="Documentary · 2026"
+                  data-img-mobile="assets/posters-mobile/KITE_V_3.webp">
+            <img src="assets/posters/KITE_KURILS_1.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>Гонимые ветром. Северные курилы</strong><br/>
+              <em>Documentary · 2026</em>
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ====== РЯД: FILM ====== -->
+      <div class="reel" id="reel-film">
+        <h2 class="reel-title">Film</h2>
+
+        <div class="strip">
+
+          <button class="thumb"
+                  data-genre="film"
+                  data-kid="mtN2HgVNwgf5D84Md1mvJu"
+                  data-title="Глазами младенца"
+                  data-meta="Mini-serial · 2025"
+                  data-img-mobile="assets/posters-mobile/GM_V_1.webp">
+            <img src="assets/posters/GLAZAMI_MLADENCA_1.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>Глазами младенца</strong><br/>
+              <em>Mini-serial · 2025</em>
+            </span>
+          </button>
+
+          <button class="thumb"
+                  data-genre="film"
+                  data-kid="ogw9y4DT3xG6JJhTafdrfG"
+                  data-title="Только ветер гудит в проводах..."
+                  data-meta="Short Film · 2023"
+                  data-img-mobile="assets/posters-mobile/ONLY_WIND_V_2.webp">
+            <img src="assets/posters/ONLY_WIND_3.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>Только ветер гудит в проводах...</strong><br/>
+              <em>Short Film · 2023</em>
+            </span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- ====== РЯД: MUSIC VIDEOS ====== -->
+      <div class="reel" id="reel-music">
+        <h2 class="reel-title">Music Videos</h2>
+
+        <div class="strip">
+
+          <button class="thumb"
+                  data-genre="music"
+                  data-kid="mhGrARvPCQA2XtF58tf5qq"
+                  data-title="Диктофон — ТэЖэ"
+                  data-meta="Music Video · 2024"
+                  data-img-mobile="assets/posters-mobile/TZH_V_1.webp">
+            <img src="assets/posters/TeZHe_1.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>Диктофон — ТэЖэ</strong><br/>
+              <em>Music Video · 2024</em>
+            </span>
+          </button>
+
+          <button class="thumb"
+                  data-genre="music"
+                  data-kid="tp16EhuVUdsgks79ANgfry"
+                  data-title="ROFMAN - Южная Ночь"
+                  data-meta="Music Video · 2024">
+            <img src="assets/posters/YN_2.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>ROFMAN - Южная Ночь</strong><br/>
+              <em>Music Video · 2024</em>
+            </span>
+          </button>
+
+          <button class="thumb"
+                  data-genre="music"
+                  data-kid="6wMTfmHBmrV52TkoDyh3Ad"
+                  data-title="Диктофон — Начало рабочего дня"
+                  data-meta="Music Video · 2025"
+                  data-hero-exclude="true">
+            <img src="assets/posters/NRD_2.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>Диктофон — Начало рабочего дня</strong><br/>
+              <em>Music Video · 2025</em>
+            </span>
+          </button>
+
+          <button class="thumb"
+                  data-genre="music"
+                  data-kid="mFULmXFPWLecF9g2HhicSd"
+                  data-title="Южный Север - Кленовый лист"
+                  data-meta="Music Video · 2022"
+                  data-hero-exclude="true">
+            <img src="assets/posters/KL_2.webp" alt=""/>
+            <span class="thumb-label">
+              <strong>Южный Север - Кленовый лист</strong><br/>
+              <em>Music Video · 2022</em>
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ====== ОБЩИЙ ПЛЕЕР ====== -->
+       <div class="player" id="global-player">
+        <div class="player-note" id="player-note"></div>
+        <div class="player-frame" id="player-main">
+          <div class="player-placeholder">Выберите проект выше ↑</div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer id="contact">
+    <div class="about">
+      <p>
+        Режиссёр монтажа. Работаю с рекламой, документальным и игровым кино, музыкальными клипами.
+        По вопросам сотрудничества пишите на почту или в мессенджер:
+      </p>
+      <a href="mailto:ederabin07@gmail.com" class="email">ederabin07@gmail.com</a>
+    </div>
+    <div class="socials">
+      <a href="https://t.me/ТВОЙ_НИКНЕЙМ" target="_blank">Telegram</a>
+      <a href="https://www.kinopoisk.ru/name/10338328/" target="_blank">Кинопоиск</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
