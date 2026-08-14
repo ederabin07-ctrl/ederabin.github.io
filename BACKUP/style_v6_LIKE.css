@@ -1,0 +1,65 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#fafaf7; color:#111; font-family:'Inter',sans-serif; font-size:14px; }
+a { color:inherit; text-decoration:none; }
+
+header {
+  position:fixed; top:0; left:0; bottom:0; width:280px;
+  padding:2rem 1.75rem; display:flex; flex-direction:column;
+  border-right:1px solid #e5e3dc; background:#fafaf7;
+}
+.logo {
+  font-size:1.25rem; font-weight:600; letter-spacing:-0.02em;
+  line-height:1.2; margin-bottom:0.5rem;
+}
+.logo::after {
+  content:"Film Editor"; display:block; font-weight:400;
+  color:#888; font-size:0.875rem; margin-top:0.25rem;
+}
+.filters {
+  display:flex; flex-direction:column; gap:0.25rem;
+  margin-top:3rem;
+}
+.filter {
+  background:none; border:none; text-align:left; padding:0.5rem 0;
+  font:inherit; font-size:1rem; cursor:pointer; color:#666;
+  transition:color 0.2s; position:relative;
+}
+.filter:hover { color:#111; }
+.filter.active { color:#111; font-weight:500; }
+.filter.active::before {
+  content:""; position:absolute; left:-1.75rem; top:50%;
+  width:14px; height:1px; background:#111;
+}
+.contact-link { margin-top:auto; color:#888; }
+
+main.works {
+  margin-left:280px;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:1px; background:#e5e3dc;
+}
+.work { background:#fafaf7; padding:1rem; transition:background 0.2s; }
+.work:hover { background:#fff; }
+.work img {
+  width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:2px;
+}
+.info { margin-top:0.75rem; display:flex; justify-content:space-between; }
+.info h3 { font-weight:500; font-size:0.95rem; }
+.info span { color:#888; font-size:0.75rem; }
+
+footer {
+  margin-left:280px; padding:4rem 1rem;
+  border-top:1px solid #e5e3dc;
+}
+.about p { font-size:1.5rem; max-width:600px; line-height:1.4; }
+.contacts { margin-top:3rem; }
+.contacts > a { font-size:1.25rem; }
+.socials { display:flex; gap:1.5rem; margin-top:1rem; }
+.socials a { color:#888; }
+
+@media (max-width:900px) {
+  header { position:relative; width:100%; height:auto; border-right:none; border-bottom:1px solid #e5e3dc; }
+  .filters { flex-direction:row; flex-wrap:wrap; margin-top:1.5rem; }
+  .filter.active::before { display:none; }
+  main.works, footer { margin-left:0; grid-template-columns:1fr; }
+}

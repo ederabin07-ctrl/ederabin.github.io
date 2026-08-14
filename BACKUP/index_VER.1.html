@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Евгений Дерябин — Film Editor</title>
+  <meta name="description" content="Режиссёр монтажа. Реклама, документалистика, игровое кино, музыкальные клипы."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== ШАПКА ===== -->
+  <header>
+    <a href="#" class="logo" id="home-link">
+      Евгений Дерябин<small>Film Editor</small>
+    </a>
+    <nav class="tabs">
+      <button class="tab" data-genre="commercial">Commercials</button>
+      <button class="tab" data-genre="doc">Documentary</button>
+      <button class="tab" data-genre="film">Fiction</button>
+      <button class="tab" data-genre="music">Music Videos</button>
+    </nav>
+    <a href="#contact" class="contact-link">Contact</a>
+  </header>
+
+  <main>
+
+    <!-- ===== ГЛАВНАЯ (HERO) ===== -->
+    <!-- Кадры рандомно меняются. Клик → переход на жанр + автозапуск видео -->
+    <section class="view view-hero active" id="view-hero">
+      <button class="hero-stage" id="hero-stage" aria-label="Открыть проект">
+        <img id="hero-img" src="" alt=""/>
+        <div class="hero-caption">
+          <h1 id="hero-title"></h1>
+          <p id="hero-meta"></p>
+        </div>
+      </button>
+    </section>
+
+    <!-- ===== ЖАНР: РЕКЛАМА ===== -->
+    <section class="view view-genre" id="view-commercial">
+      <!-- Полоса миниатюр -->
+      <div class="strip">
+
+        <!-- ▼ ОДНА РАБОТА ▼ Скопируй этот блок чтобы добавить ещё одну -->
+        <button class="thumb"
+                data-genre="commercial"
+                data-kid="nqwdRyvhLDgWe8nSFdbTAa"
+                data-title="AMAZING RED x BetBoom Team"
+                data-meta="Commercial · 2026">
+          <img src="assets/posters/ARxOZIO_BetBOOM.webp" alt=""/>
+          <span class="thumb-label">
+            <strong>AMAZING RED x BetBoom Team</strong><br/>
+            <em>Commercial · 2026</em>
+          </span>
+        </button>
+
+        <button class="thumb"
+                data-genre="commercial"
+                data-kid="k2VrGaJmFybCcjXkRYa8UV"
+                data-title="AMAZING RED — PUMA FADE NITRO"
+                data-meta="Commercial · 2026">
+          <img src="assets/posters/ARxOZIOxFADE_NITRO_1.webp" alt=""/>
+          <span class="thumb-label">
+            <strong>AMAZING RED — PUMA FADE NITRO</strong><br/>
+            <em>Commercial · 2026</em>
+          </span>
+        </button>
+
+      </div>
+
+      <!-- Плеер -->
+      <div class="player">
+        <div class="player-frame" id="player-commercial">
+          <div class="player-placeholder">Выберите проект выше ↑</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЖАНР: ДОКУМЕНТАЛЬНОЕ ===== -->
+    <section class="view view-genre" id="view-doc">
+      <div class="strip">
+
+        <button class="thumb"
+                data-genre="doc"
+                data-kid="oVFPMuGCPP9yjT3HmVxnFJ"
+                data-title="Последний сезон"
+                data-meta="Documentary · 2025">
+          <img src="assets/posters/LSH.webp" alt=""/>
+          <span class="thumb-label">
+            <strong>Последний сезон</strong><br/>
+            <em>Documentary · 2025</em>
+          </span>
+        </button>
+
+        <button class="thumb"
+                data-genre="doc"
+                data-kid="eyZea8Cji9j75VaCVnuBPb"
+                data-title="Гонимые ветром. Северные курилы"
+                data-meta="Documentary · 2024">
+          <img src="assets/posters/KITE_KURILS_2.webp" alt=""/>
+          <span class="thumb-label">
+            <strong>Гонимые ветром. Северные курилы</strong><br/>
+            <em>Documentary · 2024</em>
+          </span>
+        </button>
+
+      </div>
+
+      <div class="player">
+        <div class="player-frame" id="player-doc">
+          <div class="player-placeholder">Выберите проект выше ↑</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЖАНР: ИГРОВОЕ КИНО ===== -->
+    <section class="view view-genre" id="view-film">
+      <div class="strip">
+
+        <button class="thumb"
+                data-genre="film"
+                data-kid="mtN2HgVNwgf5D84Md1mvJu"
+                data-title="Глазами младенца"
+                data-meta="Mini-serial · 2025">
+          <img src="assets/posters/GLAZAMI_MLADENCA_1.webp" alt=""/>
+          <span class="thumb-label">
+            <strong>Глазами младенца</strong><br/>
+            <em>Mini-serial · 2025</em>
+          </span>
+        </button>
+
+      </div>
+
+      <div class="player">
+        <div class="player-frame" id="player-film">
+          <div class="player-placeholder">Выберите проект выше ↑</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЖАНР: МУЗЫКАЛЬНЫЕ КЛИПЫ ===== -->
+    <section class="view view-genre" id="view-music">
+      <div class="strip">
+
+        <button class="thumb"
+                data-genre="music"
+                data-kid="ТВОЙ_KINESCOPE_ID_8"
+                data-title="Cosmic — Floor"
+                data-meta="Music Video · 2024">
+          <img src="assets/posters/mv-1.webp" alt=""/>
+          <span class="thumb-label">
+            <strong>Cosmic — Floor</strong><br/>
+            <em>Music Video · 2024</em>
+          </span>
+        </button>
+
+        <button class="thumb"
+                data-genre="music"
+                data-kid="ТВОЙ_KINESCOPE_ID_9"
+                data-title="Mute — Static"
+                data-meta="Music Video · 2023">
+          <img src="assets/posters/mv-2.webp" alt=""/>
+          <span class="thumb-label">
+            <strong>Mute — Static</strong><br/>
+            <em>Music Video · 2023</em>
+          </span>
+        </button>
+
+      </div>
+
+      <div class="player">
+        <div class="player-frame" id="player-music">
+          <div class="player-placeholder">Выберите проект выше ↑</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer id="contact">
+    <div class="about">
+      <p>
+        Режиссёр монтажа. Работаю с рекламой, документальным и игровым кино, музыкальными клипами.
+        По вопросам сотрудничества пишите на почту или в мессенджер:
+      </p>
+      <a href="mailto:hello@yourdomain.com" class="email">ederabin07@gmail.com</a>
+    </div>
+    <div class="socials">
+      <a href="https://t.me/ТВОЙ_НИКНЕЙМ" target="_blank">Telegram</a>
+      <a href="https://instagram.com/ТВОЙ_НИКНЕЙМ" target="_blank">Instagram</a>
+      <a href="https://www.kinopoisk.ru/name/10338328/" target="_blank">Кинопоиск</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

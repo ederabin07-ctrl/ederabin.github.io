@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Имя Фамилия — Film Editor</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <span class="logo">Имя Фамилия<small>Film Editor</small></span>
+    <nav class="filters">
+      <button class="filter active" data-genre="all">All</button>
+      <button class="filter" data-genre="commercial">Commercials</button>
+      <button class="filter" data-genre="doc">Documentary</button>
+      <button class="filter" data-genre="film">Narrative</button>
+      <button class="filter" data-genre="music">Music Videos</button>
+    </nav>
+    <a href="mailto:hello@yourdomain.com" class="contact-link">Contact</a>
+  </header>
+
+  <main class="stage">
+    <a id="big-link" class="big" href="#" target="_blank">
+      <img id="big-img" src="assets/posters/commercial-1.webp" alt=""/>
+      <div class="caption">
+        <h1 id="big-title">Nike — Just Move</h1>
+        <p id="big-meta">Commercial · 2024</p>
+      </div>
+    </a>
+  </main>
+
+  <footer class="strip">
+    <div class="thumbs">
+
+      <button class="thumb active" data-genre="commercial"
+        data-href="https://kinescope.io/ТВОЙ_ID_1"
+        data-title="Nike — Just Move" data-meta="Commercial · 2024">
+        <img src="assets/posters/commercial-1.webp" alt=""/>
+      </button>
+
+      <button class="thumb" data-genre="commercial"
+        data-href="https://kinescope.io/ТВОЙ_ID_2"
+        data-title="Apple — Vision" data-meta="Commercial · 2024">
+        <img src="assets/posters/commercial-2.webp" alt=""/>
+      </button>
+
+      <button class="thumb" data-genre="doc"
+        data-href="https://kinescope.io/ТВОЙ_ID_3"
+        data-title="Tundra" data-meta="Documentary · 2023">
+        <img src="assets/posters/doc-1.webp" alt=""/>
+      </button>
+
+      <button class="thumb" data-genre="doc"
+        data-href="https://kinescope.io/ТВОЙ_ID_4"
+        data-title="City Lights" data-meta="Documentary · 2022">
+        <img src="assets/posters/doc-2.webp" alt=""/>
+      </button>
+
+      <button class="thumb" data-genre="film"
+        data-href="https://kinescope.io/ТВОЙ_ID_5"
+        data-title="The Last Light" data-meta="Short Film · 2024">
+        <img src="assets/posters/film-1.webp" alt=""/>
+      </button>
+
+      <button class="thumb" data-genre="film"
+        data-href="https://kinescope.io/ТВОЙ_ID_6"
+        data-title="Quiet Room" data-meta="Short Film · 2023">
+        <img src="assets/posters/film-2.webp" alt=""/>
+      </button>
+
+      <button class="thumb" data-genre="music"
+        data-href="https://kinescope.io/ТВОЙ_ID_7"
+        data-title="Cosmic — Floor" data-meta="Music Video · 2024">
+        <img src="assets/posters/mv-1.webp" alt=""/>
+      </button>
+
+      <button class="thumb" data-genre="music"
+        data-href="https://kinescope.io/ТВОЙ_ID_8"
+        data-title="Mute — Static" data-meta="Music Video · 2023">
+        <img src="assets/posters/mv-2.webp" alt=""/>
+      </button>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

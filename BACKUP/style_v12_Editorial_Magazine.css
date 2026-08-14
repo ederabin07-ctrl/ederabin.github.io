@@ -1,0 +1,55 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#f1ede4; color:#1a1a1a; font-family:'Inter',sans-serif; font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased; }
+a { color:inherit; text-decoration:none; }
+
+header { padding:1.5rem 2rem; border-bottom:1px solid #1a1a1a; }
+.masthead { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:1.5rem; }
+.brand { font-family:'Fraunces',serif; font-size:1.5rem; font-weight:600; letter-spacing:-0.02em; }
+.issue { font-size:0.75rem; text-transform:uppercase; letter-spacing:0.15em; color:#666; }
+header nav { display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.875rem; }
+header nav a:hover { font-style:italic; }
+
+main { padding:0 2rem; }
+
+.chapter { padding:6rem 0; border-bottom:1px solid #c8c2b3; }
+.chapter:last-child { border-bottom:none; }
+.chapter-head {
+  display:grid; grid-template-columns:80px 1fr 1fr; gap:2rem;
+  align-items:baseline; margin-bottom:5rem;
+}
+.num { font-family:'Fraunces',serif; font-size:2rem; color:#999; font-variant-numeric:tabular-nums; }
+.chapter-head h2 {
+  font-family:'Fraunces',serif; font-style:italic;
+  font-size:clamp(2.5rem, 6vw, 5rem); font-weight:400;
+  letter-spacing:-0.02em; line-height:1;
+}
+.chapter-head p { color:#555; max-width:30ch; }
+
+.entry {
+  display:grid; grid-template-columns:1.4fr 1fr; gap:3rem;
+  align-items:center; margin-bottom:4rem;
+}
+.entry.reverse { grid-template-columns:1fr 1.4fr; }
+.entry.reverse .poster { order:2; }
+.poster { display:block; overflow:hidden; }
+.poster img {
+  width:100%; aspect-ratio:4/3; object-fit:cover;
+  transition:transform 0.6s;
+}
+.poster:hover img { transform:scale(1.03); }
+
+.text h3 {
+  font-family:'Fraunces',serif; font-size:2rem; font-weight:600;
+  letter-spacing:-0.02em; margin-bottom:0.5rem;
+}
+.credit { color:#888; font-size:0.875rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1rem; }
+.text p { max-width:50ch; }
+
+footer { padding:2rem; border-top:1px solid #1a1a1a; font-size:0.875rem; color:#555; }
+footer a { border-bottom:1px solid currentColor; }
+
+@media (max-width:768px) {
+  .chapter-head { grid-template-columns:1fr; gap:1rem; }
+  .entry, .entry.reverse { grid-template-columns:1fr; gap:1.5rem; }
+  .entry.reverse .poster { order:0; }
+}
