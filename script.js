@@ -158,7 +158,7 @@ const fullVersions = {
   // Глазами младенца
   'mtN2HgVNwgf5D84Md1mvJu': {
     text: 'Смотреть полную версию на ИВИ',
-    url:  'Сhttps://www.ivi.ru/watch/glazami-mladentsa?utm_source=share&utm_medium=direct&utm_campaign=2416165262'
+    url:  'https://www.ivi.ru/watch/glazami-mladentsa?utm_source=share&utm_medium=direct&utm_campaign=2416165262'
   },
   // Гонимые ветром. Северные курилы — без ссылки
   'eyZea8Cji9j75VaCVnuBPb': {

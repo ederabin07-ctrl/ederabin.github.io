@@ -1,1 +1,0 @@
-<aside class="preview"><img id="preview-img" src="assets/posters/nike.webp" alt=""/></aside>
